@@ -7,6 +7,9 @@
 \usepackage{forloop}% used for \Qrating and \Qlines
 \usepackage{ifthen}% used for \Qitem and \QItem
 \usepackage{typearea}
+\usepackage{tabularcalc}
+\usepackage{geometry}
+\usepackage[table]{xcolor}
 \areaset{17cm}{26cm}
 \setlength{\topmargin}{-1cm}
 \usepackage{scrpage2}
@@ -119,7 +122,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
-
+\renewcommand{\QO}{$\ocircle$}% Use circles now instead of boxes.
 %%\begin{center}
 %%\textbf{\huge Questionnaire \LaTeX}
 %%\end{center}\vskip1em
@@ -142,6 +145,19 @@ academic use only at the University of Pittsburgh (EE. UU).
 \Qitem{ \Qq{Please select the gender that you identify with: }\hskip0.4cm \QO{}
 Female \hskip0.4cm \QO{} Male \hskip0.4cm Other: \Qline{2.5cm} }
 
+\Qitem{ \Qq{Rate your physical activity level based approx. steps/day: }} \hskip1cm \QO{}
+1.000 - 5.000 (not active) \hskip0.4cm \QO{} 5.000 - 10.000 (active) \hskip0.4cm 10.0000 + (very active)
+
+\Qitem{ \Qq{Do you own a personal mobile device?}}
+\hskip1cm \QO{} Yes \hskip1.5cm \QO{} No
+\Qitem{{If yes, identify what you use your mobile device for relating to transportation}
+    \begin{Qlist}
+    \item[]\QO{} Bus arrival/departure times \hskip1.1cm \QO{} Directions \hskip1.5cm \QO{} Ride sharing app
+    \item[]\QO{} Bike sharing app \hskip2.8cm \QO{} Traffic \hskip2.1cm \QO{} Pay for Parking
+    \item[] \QO{} Other: \Qline{6cm}
+    \end{Qlist}
+}
+
 \Qitem{ \Qq{Do you own a vehicle?} \textit{This includes any vehicle that you own or share ownership and is your primary mode of 
 transportation including, but not limited to: bicycle, motorbike, scooter, or car.}
 \begin{Qlist}
@@ -156,10 +172,10 @@ transportation including, but not limited to: bicycle, motorbike, scooter, or ca
 \begin{Qlist}
 \item[]\QO{} Car \hskip4.2cm \QO{} Electric-Powered Scooter \hskip1.5cm \QO{} Electric-Powered Bicycle
 \item[]\QO{} Non-Electric Scooter \hskip1.5cm \QO{} Pedal Bicycle (Non-Eletric) \hskip1.25cm \QO{} Motorcycle
-\item[] \QO{} Other: \Qline{6cm}
+\item[] \QO{} I walk everywhere \hskip2cm \QO{} Other: \Qline{6cm}
 \end{Qlist}
 }
-\Qitem{ \Qq{Do you use any publi or private modes of transportation?}\textit{This includes ride-sharing services, bike sharing systems, taxis, public bus/busetas, Cable Aereo.}\hskip2cm\QO{} yes \hskip1cm \QO{} no}{}
+\Qitem{ \Qq{Do you use any public or private modes of transportation?}\textit{This includes ride-sharing services, bike sharing systems, taxis, public bus/busetas, Cable Aereo.}\hskip2cm\QO{} yes \hskip1cm \QO{} no}{}
 \Qitem{{If you answered yes to Q5: Which mode(s) of public or private transportation do you use at least once every week?} 
     \begin{Qlist}
     \item[]\QO{} Taxi \hskip4.21cm \QO{} Public Bus/Buseta \hskip3.1cm \QO{} Bike-Sharing Program
@@ -171,119 +187,65 @@ transportation including, but not limited to: bicycle, motorbike, scooter, or ca
 \subsection*{Current Smart Mobility Initiatives}
 
 \vskip.5em
-\minisec{Consider the modes of transportation you do not use in your daily life (identified above). Please identify below
-which factors strongly influence why you don't use certain modes of transportation.}
+\textbf{Consider the modes of transportation you do not use in your daily life (identified above). Please identify below
+which factors strongly influence why you don't use certain modes of transportation.}\\
 
-\Qitem[a]{ \Qq{Travel times are too long} \Qtab{8.2cm}{strongly disagree \Qrating{5} strongly agree}}
+\QItem[a]{ \Qq{Travel times are too long} \Qtab{7.5cm}{strongly disagree \Qrating{5} strongly agree}}
 
-\Qitem[b]{ \Qq{Stress inducing} \Qtab{8.2cm}{strongly disagree \Qrating{5} strongly agree}}
+\QItem[b]{ \Qq{Stress inducing} \Qtab{7.5cm}{strongly disagree \Qrating{5} strongly agree}}
 
-\Qitem[c]{ \Qq{Not technologically advanced} \Qtab{8.2cm}{strongly disagree \Qrating{5} strongly agree}}
+\QItem[c]{ \Qq{Not technologically advanced} \Qtab{7.5cm}{strongly disagree \Qrating{5} strongly agree}}
 
-\Qitem[d]{ \Qq{Not on demand}\Qtab{8.29cm}{strongly disagree \Qrating{5} strongly agree}}
+\QItem[d]{ \Qq{Not on demand}\Qtab{7.5cm}{strongly disagree \Qrating{5} strongly agree}}
 
-\Qitem[e]{ \Qq{Personal safety at risk}\Qtab{8.3cm}{strongly disagree \Qrating{5} strongly agree}}
+\QItem[e]{ \Qq{Personal safety at risk}\Qtab{7.5cm}{strongly disagree \Qrating{5} strongly agree}}
 
-\Qitem[e]{ \Qq{Too crowded, Not sanitary}\Qtab{8.3cm}{strongly disagree \Qrating{5} strongly agree}}
+\QItem[f]{ \Qq{Too crowded, not sanitary}\Qtab{7.5cm}{strongly disagree \Qrating{5} strongly agree}}
 
-\minisec{Consider the modes of transportation you do not use in your daily life (identified above). Please identify below
-which factors strongly influence why you don't use certain modes of transportation.}
+\QItem[g]{ \Qq{Too expensive}\Qtab{7.5cm}{strongly disagree \Qrating{5} strongly agree}}
 
-\subsection*{About this questionnaire}
+\QItem[h]{ \Qq{Complicated registration process}\Qtab{7.5cm}{strongly disagree \Qrating{5} strongly agree}}\\
 
-\Qitem{\Qq{Do you like the style so far?} \Qtab{5.5cm}{\QO{} Yes
-\hskip0.5cm \QO{} No}}
+\textbf{Please continue on to the back of this page to finish answering survey questions.}\\
 
-\Qitem{\Qq{Is it really worth the ink?} \Qtab{5.5cm}{\QO{} Guess so.
-\hskip0.5cm \QO{} Probably not. \hskip0.5cm \QO{} Don't know.}}
 
-\Qitem{\Qq{How does this item look different from the previous one?}
-\Qtab{10.5cm}{\QO{}\Qtab{0.6cm}{Oh. Does it?}}\par
-\Qtab{10.5cm}{\QO{}\Qtab{0.6cm}{No clue. I just can't figure it out.
-So sorry.}}\par
-\Qtab{10.5cm}{\QO{}\Qtab{0.6cm}{I guess what you mean is that here
-the different answer options are below each other.}}\par
-}
+\Qitem{What factors are positively and/or negatively impacted by the modes of transportation you use? Only fill out
+the modes of transportation that apply to you.} 
+SL = Stress-level \hskip1cm PF = Physical Fitness \hskip1cm FS = Financial Savings \hskip1cm WL = Work-Life Balance
 
-\Qitem[a]{ \Qq{Please describe your first impression.} \Qlines{2} }
+{\rowcolors{1}{white!80!black!20}{white!70!black!60}
+\begin{center}
+\begin{tabular}{ | m{10em} | m{5cm}| m{5cm} | } 
+\hline
+ & Positively Impacts & Negatively Impacts \\ 
+\hline
+Personal Motor Vehicle & \QO SL\hskip0.5cm \QO PF \hskip0.5cm \QO FS \hskip0.5cm \QO WL 
+     & \QO SL\hskip0.5cm \QO PF \hskip0.5cm \QO FS \hskip0.5cm \QO WL \\ 
+\hline
+Personal Bike & \QO SL\hskip0.5cm \QO PF \hskip0.5cm \QO FS \hskip0.5cm \QO WL 
+& \QO SL\hskip0.5cm \QO PF \hskip0.5cm \QO FS \hskip0.5cm \QO WL \\ 
+\hline
+Bike Sharing & \QO SL\hskip0.5cm \QO PF \hskip0.5cm \QO FS \hskip0.5cm \QO WL 
+& \QO SL\hskip0.5cm \QO PF \hskip0.5cm \QO FS \hskip0.5cm \QO WL \\ 
+\hline
+Ride-Sharing & \QO SL\hskip0.5cm \QO PF \hskip0.5cm \QO FS \hskip0.5cm \QO WL 
+& \QO SL\hskip0.5cm \QO PF \hskip0.5cm \QO FS \hskip0.5cm \QO WL \\ 
+\hline
+Taxi & \QO SL\hskip0.5cm \QO PF \hskip0.5cm \QO FS \hskip0.5cm \QO WL 
+& \QO SL\hskip0.5cm \QO PF \hskip0.5cm \QO FS \hskip0.5cm \QO WL \\ 
+\hline
+Public Bus& \QO SL\hskip0.5cm \QO PF \hskip0.5cm \QO FS \hskip0.5cm \QO WL 
+& \QO SL\hskip0.5cm \QO PF \hskip0.5cm \QO FS \hskip0.5cm \QO WL \\ 
+\hline
+Cable Aereo & \QO SL\hskip0.5cm \QO PF \hskip0.5cm \QO FS \hskip0.5cm \QO WL 
+& \QO SL\hskip0.5cm \QO PF \hskip0.5cm \QO FS \hskip0.5cm \QO WL \\ 
+\hline
+Other: \Qline{2cm} & \QO SL\hskip0.5cm \QO PF \hskip0.5cm \QO FS \hskip0.5cm \QO WL 
+& \QO SL\hskip0.5cm \QO PF \hskip0.5cm \QO FS \hskip0.5cm \QO WL \\ 
+\hline
+\end{tabular}
+\end{center}
 
-\Qitem[b]{ \Qq{In case you would like some more lines to write, here
-they are:} \Qlines{4} }
-
-\section*{Another feature}
-
-\noindent Now, here is another nice feature: you can automatically
-alter the background color of the items. Here is how it can look like.
-Because we are too lazy to think of new questions we will just ask you
-the same questions again. There is one difference to the above though,
-can you find it?
-
-\renewcommand{\QO}{$\ocircle$}% Use circles now instead of boxes.
-
-\section*{About you}
-
-\QItem{ \Qq{Your name}: \Qline{8cm} }
-
-\QItem{ \Qq{How old are you?} I am \Qline{1.5cm} years old.}
-
-\QItem{ \Qq{Are you in a good mood right now?} \hskip0.4cm \QO{}
-absolutely \hskip0.5cm \QO{} not really because: \Qline{3cm} }
-
-\QItem{ \Qq{Do you like having an option?}
-\begin{Qlist}
-\item Yes, this meets my need for autonomy.
-\item No, I'd rather have someone else decide for me.
-\item Not sure.
-\end{Qlist}
-}
-
-\QItem{ \Qq{What kind of music do you like best?}
-\begin{Qlist}
-\item Johann Sebastian Bach
-\item Jazz
-\item The Beatles
-\item Other: \Qline{4cm}
-\end{Qlist}
-}
-
-\minisec{Please evaluate the following composers}
-\vskip.5em
-
-\QItem[a]{ \Qq{Mozart} \Qtab{3cm}{horrible \Qrating{5} fantastic}}
-
-\QItem[b]{ \Qq{Beethoven} \Qtab{3cm}{horrible \Qrating{5} fantastic}}
-
-\QItem[c]{ \Qq{Johann S. Bach} \Qtab{3cm}{horrible \Qrating{5} fantastic}}
-
-\QItem[d]{ \Qq{John Lennon}\Qtab{2.5cm}{\parbox[t]{3.3cm}{\raggedleft
-Uh, well, I do not like his music very much}
-\Qrating{7} \parbox[t]{3cm}{Oh, yes, you know, really great
-stuff}}}
-
-\QItem[e]{ \Qq{Elvis}\Qtab{2.5cm}{\parbox[t]{3.3cm}{\raggedleft
-Uh, well, I do not like his music very much}
-\Qrating{7} \parbox[t]{3cm}{Oh, yes, you know, really great
-stuff}}}
-
-\section*{About this questionnaire}
-
-\QItem{\Qq{Do you like the style so far?} \Qtab{5.5cm}{\QO{} Yes
-\hskip0.5cm \QO{} No}}
-
-\QItem{\Qq{Is it really worth the ink?} \Qtab{5.5cm}{\QO{} Guess so.
-\hskip0.5cm \QO{} Probably not. \hskip0.5cm \QO{} Don't know.}}
-
-\QItem{\Qq{How does this item look different from the previous one?}
-\Qtab{10.5cm}{\QO{}\Qtab{0.6cm}{Oh. Does it?}}\par
-\Qtab{10.5cm}{\QO{}\Qtab{0.6cm}{No clue. I just can't figure it out.
-So sorry.}}\par
-\Qtab{10.5cm}{\QO{}\Qtab{0.6cm}{I guess what you mean is that here
-the different answer options are below each other.}}\par
-}
-
-\QItem[a]{ \Qq{Please describe your first impression.} \Qlines{2} }
-
-\QItem[b]{ \Qq{In case you would like some more lines to write, here
-they are:} \Qlines{4} }
+\subsection*{Potential Smart Mobility Initiatives}
 
 \end{document}
