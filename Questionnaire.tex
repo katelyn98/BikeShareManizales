@@ -145,38 +145,54 @@ academic use only at the University of Pittsburgh (EE. UU).
 \Qitem{ \Qq{Please select the gender that you identify with: }\hskip0.4cm \QO{}
 Female \hskip0.4cm \QO{} Male \hskip0.4cm Other: \Qline{2.5cm} }
 
-\Qitem{ \Qq{Rate your physical activity level based approx. steps/day: }} \hskip1cm \QO{}
+\Qitem{ \Qq{Rate your physical activity level based on approx. steps/day: }} \hskip1cm \QO{}
 1.000 - 5.000 (not active) \hskip0.4cm \QO{} 5.000 - 10.000 (active) \hskip0.4cm 10.0000 + (very active)
 
-\Qitem{ \Qq{Do you own a personal mobile device?}}
-\hskip1cm \QO{} Yes \hskip1.5cm \QO{} No
-\Qitem{{If yes, identify what you use your mobile device for relating to transportation}
+\renewcommand{\QO}{$\Box$}
+\Qitem{ \Qq{What adjectives do you associate with the statement: "Transportation in Manizales, Colombia" ?}
     \begin{Qlist}
-    \item[]\QO{} Bus arrival/departure times \hskip1.1cm \QO{} Directions \hskip1.5cm \QO{} Ride sharing app
-    \item[]\QO{} Bike sharing app \hskip2.8cm \QO{} Traffic \hskip2.1cm \QO{} Pay for Parking
-    \item[] \QO{} Other: \Qline{6cm}
+    \item[]\QO{} Outdated \hskip1cm \QO{} Technologically Advanced \hskip1cm \QO{} Unsafe travel conditions \hskip1cm \QO{} Consistent
+    \item[]\QO{} Not reliable \hskip0.7cm \QO{} Complicated \hskip0.7cm \QO{} Diverse \hskip0.6cm \QO{} Expensive \hskip0.6cm \QO{} Enforced Rules
+    \item[]\QO{} Overcrowded \hskip0.5cm \QO{} Not easily accessible \hskip1.8cm \QO{} Other: \Qline{5cm}
     \end{Qlist}
 }
 
-\Qitem{ \Qq{Do you own a vehicle?} \textit{This includes any vehicle that you own or share ownership and is your primary mode of 
-transportation including, but not limited to: bicycle, motorbike, scooter, or car.}
-\begin{Qlist}
-\item Yes, I personally own a vehicle.
-\item No, I do not personally own a vehicle.
-\item Not sure.
-\end{Qlist}
-\textit{If you checked 'No' or 'Not sure', proceed to question 5.}
+\renewcommand{\QO}{$\ocircle$}
+\Qitem{ \Qq{Do you own or share ownership of a vehicle?}
+    \begin{Qlist}
+    \item Yes, I personally own a vehicle.
+    \item No, I do not personally own a vehicle.
+    \item Not sure.
+    \end{Qlist}
+\textit{If you checked 'No' or 'Not sure', proceed to question 8.}
 }
 
+\renewcommand{\QO}{$\Box$}
 \Qitem{ \Qq{What kind of personal vehicle(s) do you own/share ownership?}
-\begin{Qlist}
-\item[]\QO{} Car \hskip4.2cm \QO{} Electric-Powered Scooter \hskip1.5cm \QO{} Electric-Powered Bicycle
-\item[]\QO{} Non-Electric Scooter \hskip1.5cm \QO{} Pedal Bicycle (Non-Eletric) \hskip1.25cm \QO{} Motorcycle
-\item[] \QO{} I walk everywhere \hskip2cm \QO{} Other: \Qline{6cm}
-\end{Qlist}
+    \begin{Qlist}
+    \item[]\QO{} Car \hskip4.2cm \QO{} Electric-Powered Scooter \hskip1.5cm \QO{} Electric-Powered Bicycle
+    \item[]\QO{} Non-Electric Scooter \hskip1.5cm \QO{} Pedal Bicycle (Non-Eletric) \hskip1.25cm \QO{} Motorcycle
+    \item[]\QO{} Other: \Qline{6cm}
+    \end{Qlist}
 }
-\Qitem{ \Qq{Do you use any public or private modes of transportation?}\textit{This includes ride-sharing services, bike sharing systems, taxis, public bus/busetas, Cable Aereo.}\hskip2cm\QO{} yes \hskip1cm \QO{} no}{}
-\Qitem{{If you answered yes to Q5: Which mode(s) of public or private transportation do you use at least once every week?} 
+
+\subsection*{Current Smart Mobility Initiatives in Manizales, Colombia}
+
+\renewcommand{\QO}{$\ocircle$}
+\Qitem{ \Qq{Do you use any public or private modes of transportation?}
+\hskip1cm\QO{} yes \hskip1cm \QO{} no}{}
+
+\renewcommand{\QO}{$\Box$}
+\Qitem{{If you answered no to Q8: Please identify what reasons most closely align with why you do not use 
+any public or private modes or transportation.}
+    \begin{Qlist}
+    \item[]\QO{} Not close to where I live/work \hskip1.5cm \QO{} Long travel times  \hskip1cm \QO{} Not envrionmentally friendly
+    \item[]\QO{} Not offered when I need to travel \hskip0.8cm \QO{}I like/prefer to walk  \hskip0.95cm \QO{} I don't need to
+    \item[]\QO{} Other: \Qline{6cm}
+    \end{Qlist}
+
+}
+\Qitem{{If you answered yes to Q8: Which mode(s) of public or private transportation do you use at least once every week?} 
     \begin{Qlist}
     \item[]\QO{} Taxi \hskip4.21cm \QO{} Public Bus/Buseta \hskip3.1cm \QO{} Bike-Sharing Program
     \item[]\QO{} Ride-Sharing Program \hskip1.5cm \QO{} Carpooling with friends/family \hskip1cm \QO{} Cable Aereo
@@ -184,31 +200,43 @@ transportation including, but not limited to: bicycle, motorbike, scooter, or ca
     \end{Qlist}
 }
 
-\subsection*{Current Smart Mobility Initiatives}
+\Qitem{{If you answered yes to Q8: Which mode(s) of public or private transportation do you dislike using or try to avoid?} 
+    \begin{Qlist}
+    \item[]\QO{} Taxi \hskip4.21cm \QO{} Public Bus/Buseta \hskip3.1cm \QO{} Bike-Sharing Program
+    \item[]\QO{} Ride-Sharing Program \hskip1.5cm \QO{} Carpooling with friends/family \hskip1cm \QO{} Cable Aereo
+    \item[] \QO{} Other: \Qline{6cm}
+    \end{Qlist}
+}
 
 \vskip.5em
-\textbf{Consider the modes of transportation you do not use in your daily life (identified above). Please identify below
+\textbf{Consider the modes of transportation you do not use in your daily life or try to avoid. Please identify below
 which factors strongly influence why you don't use certain modes of transportation.}\\
 
 \QItem[a]{ \Qq{Travel times are too long} \Qtab{7.5cm}{strongly disagree \Qrating{5} strongly agree}}
 
-\QItem[b]{ \Qq{Stress inducing} \Qtab{7.5cm}{strongly disagree \Qrating{5} strongly agree}}
+\QItem[b]{ \Qq{Stress inducing} \Qtab{7.5cm}{strongly disagree \Qrating{5} strongly agree}}\\
+\textbf{Please continue on to the back of this page to finish answering survey questions.}
 
 \QItem[c]{ \Qq{Not technologically advanced} \Qtab{7.5cm}{strongly disagree \Qrating{5} strongly agree}}
 
-\QItem[d]{ \Qq{Not on demand}\Qtab{7.5cm}{strongly disagree \Qrating{5} strongly agree}}
+\QItem[d]{ \Qq{Not available when I need it}\Qtab{7.5cm}{strongly disagree \Qrating{5} strongly agree}}
 
-\QItem[e]{ \Qq{Personal safety at risk}\Qtab{7.5cm}{strongly disagree \Qrating{5} strongly agree}}
+\QItem[e]{ \Qq{Breaks down a lot}\Qtab{7.5cm}{strongly disagree \Qrating{5} strongly agree}}
 
-\QItem[f]{ \Qq{Too crowded, not sanitary}\Qtab{7.5cm}{strongly disagree \Qrating{5} strongly agree}}
+\QItem[f]{ \Qq{Too crowded}\Qtab{7.5cm}{strongly disagree \Qrating{5} strongly agree}}
 
-\QItem[g]{ \Qq{Too expensive}\Qtab{7.5cm}{strongly disagree \Qrating{5} strongly agree}}
+\QItem[g]{ \Qq{Not clean}\Qtab{7.5cm}{strongly disagree \Qrating{5} strongly agree}}
 
-\QItem[h]{ \Qq{Complicated registration process}\Qtab{7.5cm}{strongly disagree \Qrating{5} strongly agree}}\\
+\QItem[h]{ \Qq{Too expensive}\Qtab{7.5cm}{strongly disagree \Qrating{5} strongly agree}}
 
-\textbf{Please continue on to the back of this page to finish answering survey questions.}\\
+\QItem[i]{ \Qq{Complicated registration process}\Qtab{7.5cm}{strongly disagree \Qrating{5} strongly agree}}
 
+\QItem[j]{ \Qq{I need to exercise}\Qtab{7.5cm}{strongly disagree \Qrating{5} strongly agree}}
 
+\QItem[k]{ \Qq{Not easily accessible}\Qtab{7.5cm}{strongly disagree \Qrating{5} strongly agree}}\\
+
+\Qitem{Do you have any other comments about why you don't use certain modes of transportation? Provide examples and 
+the specific mode of transportation that you are referring to. } \Qline{17cm}\\ \Qline{17cm}\\ \Qline{17cm}
 \Qitem{What factors are positively and/or negatively impacted by the modes of transportation you use? Only fill out
 the modes of transportation that apply to you.} 
 SL = Stress-level \hskip1cm PF = Physical Fitness \hskip1cm FS = Financial Savings \hskip1cm WL = Work-Life Balance
@@ -246,6 +274,36 @@ Other: \Qline{2cm} & \QO SL\hskip0.5cm \QO PF \hskip0.5cm \QO FS \hskip0.5cm \QO
 \end{tabular}
 \end{center}
 
-\subsection*{Potential Smart Mobility Initiatives}
+\subsection*{Potential Smart Mobility Initiatives in Manizales, Colombia}
+
+If the below features were a part of tranportation in Manizales, Colombia, high likely are you to use it? \\
+
+\QItem[a]{ \Qq{Free wifi on Cable Aereo and public buses} \Qtab{7.5cm}{very unlikely \Qrating{5} very likely}}
+
+\QItem[b]{ \Qq{Complete streets} \Qtab{7.5cm}{very unlikely \Qrating{5} very likely}}\\
+Complete streets are streets that separate motorvehicles from bicyles and from pedestrians by creating separate lanes for each mode of transportation.
+
+\QItem[c]{ \Qq{Protected bike-only lane} \Qtab{7.5cm}{very unlikely \Qrating{5} very likely}}
+
+\QItem[d]{ \Qq{Smart Phone Apps} \Qtab{7.5cm}{very unlikely \Qrating{5} very likely}}
+
+\QItem[e]{ \Qq{Smart Phone charging ports} \Qtab{7.5cm}{very unlikely \Qrating{5} very likely}}
+
+\Qitem{{For the questions between 14a. and 14e. that you answered very unlikely or unlikely, please select why below.}
+    \begin{Qlist}
+    \item[]\QO{} Not necessary \hskip2.5cm \QO{} Doesn't apply to me \hskip2cm \QO{} I'm not good with technology 
+    \item[]\QO{} Not safe \hskip3.3cm \QO{} Not practical  \hskip3.2cm \QO{} I don't own or ride a bike
+    \item[] \QO{} Other: \Qline{6cm}
+    \end{Qlist}
+}
+\Qitem{{For the questions between 14a. and 14e. that you answered very likely or likely, please select why below.}
+    \begin{Qlist}
+    \item[]\QO{} Improves efficiency in commute \hskip0.5cm \QO{} Decreases stress \hskip2.5cm \QO{} Envrionmentally friendly
+    \item[]\QO{}  Improves my personal safety \hskip1cm \QO{} Increases my physical fitness 
+    \item[]\QO{} Other: \Qline{6cm}
+    \end{Qlist}
+}
+
+\Qitem{Do you have any other comments about the current or potential transportation and it's impact on your quality of life? Write them in the space below.}
 
 \end{document}
