@@ -13,19 +13,6 @@
 \areaset{17cm}{26cm}
 \usepackage{scrpage2}
 
-
-%%Question 8 5-point scale strongly agree and disagree and neutral 
-%%scale based on the factor to not be biased
-%%re-word question 8 select one option for each line
-%get rid of question 6
-%% what do you consider the most important for bike transportaiton specifically (ask after the best and worst)
-%%what benefits 
-%%what areas could be improved
-%%which areas do they do the best and which are they worst
-%% get rid of 11b
-%%change 12 to be a rated of safe, practical, interested, comfortable. 
-%%question 14 change suggestions and recommendations of initiatves. 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Beginning of questionnaire command definitions %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -134,7 +121,7 @@
 %%\textbf{\huge Questionnaire \LaTeX}
 %%\end{center}\vskip1em
 
-\noindent Thank you for participating in this study; your responses and honesty are appreciated.
+\noindent Thank you for participating in this study; your honesty and responses are appreciated.
 Your responses to the questions below will remain annonynous and confidential.
 You do not have to answer any question that you do not want to. This study is not
 associated with any public or private organizations. Analysis of data will be for
@@ -157,7 +144,7 @@ Female \hskip0.4cm \QO{} Male \hskip0.4cm Other: \Qline{2.5cm} }
 \vspace{0.1cm}
 
 
-\Qitem{ \Qq{Have you ever heard of the free bike loan system called CityBioBike?}
+\Qitem{ \Qq{Have you ever heard of the bike sharing system called CityBioBike?}
 \QO{} yes \hskip0.2cm \QO{} no \hskip0.2cm \QO{} not sure}{}
 
 \vspace{0.1cm}
@@ -171,83 +158,66 @@ Female \hskip0.4cm \QO{} Male \hskip0.4cm Other: \Qline{2.5cm} }
 \hskip1.5cm\QO{} yes \hskip1cm \QO{} no}{}
 \Qitem{\Qq{Are you a frequent user? (If no, go to question 9.)}
 \hskip1cm\QO{} yes \hskip1cm \QO{} no}{}
-
-\renewcommand{\QO}{$\Box$}
-\Qitem{\Qq{What are the main reasons you use CityBioBike? Select all that apply.} 
-    \begin{Qlist}
-    \item[]\QO{} To grocery shop \hskip1.5cm \QO{} To go to work \hskip1.5cm \QO{} To exercise \hskip1.5cm \QO{} To save money
-    \item[]\QO{} To go to school \hskip1.5cm \QO{} To visit friends and family \hskip1cm \QO{} To enjoy the nature and mountains
-    \item[] \QO{} Other: \Qline{6cm}
-    \end{Qlist}
-}
 \renewcommand{\QO}{$\ocircle$}
 \Qitem{ \Qq{How many times do you use CityBioBike on avg in a week?: }\hskip0.2cm \QO{}
 0-4 \hskip0.2cm \QO{} 5-8 \hskip0.2cm \QO{} 9-12 \hskip0.2cm \QO{} 13+}
-
-\vspace{0.3cm}
-
-\subsection*{Current Transportation Initiatives in Manizales, Colombia}
-
+\vspace{0.1cm}
 \renewcommand{\QO}{$\Box$}
+\Qitem{\Qq{What are the main reasons you use CityBioBike? Select all that apply.} 
+    \begin{Qlist}
+    \item[]\QO{} To grocery shop \hskip0.5cm \QO{} To go to work \hskip0.5cm \QO{} To exercise \hskip0.5cm \QO{} To save money \hskip0.5cm \QO{} To go to school
+    \item[]\QO{} To visit friends and family \hskip0.5cm \QO{} To enjoy the nature and mountains \hskip0.5cm \QO{} Other: \Qline{3cm}
+    \end{Qlist}
+}
+\vspace{0.1cm}
+\renewcommand{\QO}{$\ocircle$}
+\Qitem{\Qq{When it comes commuting by bike, which is the most important factor to you?}
+ \begin{Qlist} 
+    \item[]\QO{} Safety \hskip0.5cm \QO{} Travel time \hskip0.5cm \QO{} Cost \hskip0.5cm \QO{} Comfortability \hskip0.5cm \QO{} Other: \Qline{3cm}
+ \end{Qlist}
+}
 
 \vspace{0.1cm}
 
-\textbf{9. Please rate how CityBioBike is doing with respect to each category listed below.} \\
+\subsection*{Current Bicycle Initiatives in Manizales, Colombia}
+
+\vspace{0.1cm}
+
+\hskip0.4cm \textbf{10. Please rate how CityBioBike is doing with respect to each category listed below.} \\
 \\
 \QItem[a]{ \Qq{Cleanliness} \hskip5.7cm {not clean\Qrating{5} very clean}}
 
-\QItem[b]{ \Qq{Registration Process} \hskip3.9cm {very hard \Qrating{5} very easy}}
-
 \QItem[c]{ \Qq{Quality} \hskip5.9cm {breaks a lot \Qrating{5} rarely breaks}}
-
-\QItem[d]{ \Qq{Bike availability}\hskip4.1cm {never available \Qrating{5} always available}}
 
 \QItem[e]{ \Qq{Safety}\hskip6.9cm {not safe \Qrating{5} very safe}}
 
-\QItem[f]{ \Qq{Bike Station Locations}\hskip2cm {needs more locations \Qrating{5} perfect as is}}
+\QItem[b]{ \Qq{Registration Process} \hskip3cm {too complicated \Qrating{5} very easy}}
+
+\QItem[f]{ \Qq{Renting Process}\hskip3.9cm {too complicated \Qrating{5} very easy}}
+
+\QItem[d]{ \Qq{Bike availability}\hskip4.1cm {never available \Qrating{5} always available}}
+
+\QItem[f]{ \Qq{Bike Station Locations}\hskip2cm {needs more locations \Qrating{5} perfect as is}}\\
 
 \vspace{0.1cm}
+\Qitem{Please provide any suggestions about how CityBioBike can improve in any of the areas listed above. } \Qline{17cm}\\ \Qline{17cm}\\ \Qline{17cm}\\
 
-\Qitem{Do you have any other comments about why you do or don't like the bike sharing system in Manizlaes, Colombia? Provide examples. } \Qline{17cm}\\ \Qline{17cm}\\ \Qline{17cm}
-%\Qitem{What factors are positively and/or negatively impacted by the modes of transportation you use? Only fill out
-%the modes of transportation that apply to you.} 
-%SL = Stress-level \hskip1cm PF = Physical Fitness \hskip1cm FS = Financial Savings \hskip1cm WL = Work-Life Balance
-%%%%%
-%{\rowcolors{1}{white!80!black!20}{white!70!black!60}
-%\begin{center}
-%\begin{tabular}{ | m{10em} | m{5cm}| m{5cm} | } 
-%\hline
- %& Positively Impacts & Negatively Impacts \\ 
-%\hline
-%Personal Motor Vehicle & \QO SL\hskip0.5cm \QO PF \hskip0.5cm \QO FS \hskip0.5cm \QO WL 
- %    & \QO SL\hskip0.5cm \QO PF \hskip0.5cm \QO FS \hskip0.5cm \QO WL \\ 
-%\hline
-%Personal Bike & \QO SL\hskip0.5cm \QO PF \hskip0.5cm \QO FS \hskip0.5cm \QO WL 
-%& \QO SL\hskip0.5cm \QO PF \hskip0.5cm \QO FS \hskip0.5cm \QO WL \\ 
-%\hline
-%Bike Sharing & \QO SL\hskip0.5cm \QO PF \hskip0.5cm \QO FS \hskip0.5cm \QO WL 
-%& \QO SL\hskip0.5cm \QO PF \hskip0.5cm \QO FS \hskip0.5cm \QO WL \\ 
-%\hline
-%Ride-Sharing & \QO SL\hskip0.5cm \QO PF \hskip0.5cm \QO FS \hskip0.5cm \QO WL 
-%& \QO SL\hskip0.5cm \QO PF \hskip0.5cm \QO FS \hskip0.5cm \QO WL \\ 
-%\hline
-%Taxi & \QO SL\hskip0.5cm \QO PF \hskip0.5cm \QO FS \hskip0.5cm \QO WL 
-%& \QO SL\hskip0.5cm \QO PF \hskip0.5cm \QO FS \hskip0.5cm \QO WL \\ 
-%\hline
-%Public Bus& \QO SL\hskip0.5cm \QO PF \hskip0.5cm \QO FS \hskip0.5cm \QO WL 
-%& \QO SL\hskip0.5cm \QO PF \hskip0.5cm \QO FS \hskip0.5cm \QO WL \\ 
-%\hline
-%Cable Aereo & \QO SL\hskip0.5cm \QO PF \hskip0.5cm \QO FS \hskip0.5cm \QO WL 
-%& \QO SL\hskip0.5cm \QO PF \hskip0.5cm \QO FS \hskip0.5cm \QO WL \\ 
-%\hline
-%Other: \Qline{2cm} & \QO SL\hskip0.5cm \QO PF \hskip0.5cm \QO FS \hskip0.5cm \QO WL 
-%& \QO SL\hskip0.5cm \QO PF \hskip0.5cm \QO FS \hskip0.5cm \QO WL \\ 
-%\hline
-%\end{tabular}
-%\end{center}
+\hskip0cm \textbf{12. Please rate how the city of Manizales is doing with respect to each category listed below. }\\
 
-\subsection*{Potential Smart Mobility Initiatives in Manizales, Colombia}
+\QItem[a]{ \Qq{Bike racks} \hskip5.7cm {need more \Qrating{5} perfect as is}}
 
+\QItem[c]{ \Qq{Bike only lanes} \hskip4.8cm {need more \Qrating{5} perfect as is}}
+
+\QItem[e]{ \Qq{Road Signs for bikers}\hskip3.8cm {need more \Qrating{5} perfect as is}}
+
+\QItem[b]{ \Qq{Bike safety education \& laws} \hskip2.4cm {need more \Qrating{5} perfect as is}}\\
+
+\vspace{0.1cm}
+\Qitem{Please provide any suggestions about how Manizales can improve in any of the areas listed above. } \Qline{17cm}\\ \Qline{17cm}\\ \Qline{17cm}\\
+
+\subsection*{Potential Bicycle Initiatives in Manizales, Colombia}
+
+\renewcommand{\QO}{$\ocircle$}
 \Qitem{\Qq{Did you know that CityBioBike is free to use?}\hskip1cm\QO{} yes \hskip1cm \QO{} no}{}
 
 If the below infrastructure or initiatives were implemented in Manizales, Colombia, how likely are you to start using CityBioBike? \\
