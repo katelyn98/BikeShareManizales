@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  8 APR 2020 20:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  8 APR 2020 20:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -446,21 +446,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 233--234
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 249--250
+/Users/katelynmorrison/Desktop/Spring ONLINE/School/Colombia/ManizalesResearch/SmartMobilityResearch/Questionnaire.tex:284: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.284 \Qitem
+            {Do you have suggestions to help improve the bike sharing system...
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 284--285
 
  []
 
-[2] (/Users/katelynmorrison/Desktop/Spring ONLINE/School/Colombia/ManizalesResearch/SmartMobilityResearch/Questionnaire.aux) ) 
+[2] (/Users/katelynmorrison/Desktop/Spring ONLINE/School/Colombia/ManizalesResearch/SmartMobilityResearch/Questionnaire.aux) )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 251 ({)
+### bottom level 
 Here is how much of TeX's memory you used:
- 6674 strings out of 492616
- 105906 string characters out of 6129482
+ 6678 strings out of 492616
+ 105976 string characters out of 6129482
  336369 words of memory out of 5000000
- 10512 multiletter control sequences out of 15000+600000
+ 10516 multiletter control sequences out of 15000+600000
  5482 words of font info for 21 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,7n,56p,9222b,275s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,10n,56p,9222b,275s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/wasy2-ps/wasy10.pfb>
-Output written on "/Users/katelynmorrison/Desktop/Spring ONLINE/School/Colombia/ManizalesResearch/SmartMobilityResearch/Questionnaire.pdf" (2 pages, 59384 bytes).
+Output written on "/Users/katelynmorrison/Desktop/Spring ONLINE/School/Colombia/ManizalesResearch/SmartMobilityResearch/Questionnaire.pdf" (2 pages, 61206 bytes).
 PDF statistics:
  27 PDF objects out of 1000 (max. 8388607)
  18 compressed objects within 1 object stream
