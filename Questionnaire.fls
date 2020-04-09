@@ -16,8 +16,10 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/koma-script/scrlfile.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/koma-script/scrlfile.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/koma-script/tocbasic.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/koma-script/tocbasic.sty
-INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/koma-script/scrsize10pt.clo
-INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/koma-script/scrsize10pt.clo
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/koma-script/scrsize11pt.clo
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/koma-script/scrsize11pt.clo
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/koma-script/typearea.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/koma-script/typearea.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/babel/babel.sty
@@ -98,16 +100,23 @@ INPUT /Users/katelynmorrison/Desktop/Spring ONLINE/School/Colombia/ManizalesRese
 OUTPUT /Users/katelynmorrison/Desktop/Spring ONLINE/School/Colombia/ManizalesResearch/SmartMobilityResearch/Questionnaire.aux
 INPUT /usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmss10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/wasysym/uwasy.fd
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/wasysym/uwasy.fd
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/wasy/wasy10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/wasy/wasy7.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/wasy/wasy5.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/wasy/wasy8.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/wasy/wasy6.tfm
 OUTPUT /Users/katelynmorrison/Desktop/Spring ONLINE/School/Colombia/ManizalesResearch/SmartMobilityResearch/Questionnaire.pdf
 INPUT /usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT /Users/katelynmorrison/Desktop/Spring ONLINE/School/Colombia/ManizalesResearch/SmartMobilityResearch/Questionnaire.aux
