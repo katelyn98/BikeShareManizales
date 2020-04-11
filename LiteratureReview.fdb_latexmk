@@ -1,14 +1,14 @@
 # Fdb version 3
-["bibtex LiteratureReview"] 1586552101 "LiteratureReview.aux" "LiteratureReview.bbl" "LiteratureReview" 1586552390
+["bibtex LiteratureReview"] 1586578774 "LiteratureReview.aux" "LiteratureReview.bbl" "LiteratureReview" 1586578777
   "/usr/local/texlive/2019/texmf-dist/bibtex/bst/base/unsrt.bst" 1292289607 18030 1376b4b231b50c66211e47e42eda2875 ""
-  "LiteratureReview.aux" 1586552389 653 e3e64b207c4903e9be700ff4925b51e0 "pdflatex"
-  "references.bib" 1586552089 2098 a64e88192b65ff067b1373a7d523a785 ""
+  "LiteratureReview.aux" 1586578777 888 31c46462c485a1f916b7759ff0f829de "pdflatex"
+  "references.bib" 1586578453 2739 de8c718a5c5ccd7062a4d6d07dd602c2 ""
   (generated)
   "LiteratureReview.blg"
   "LiteratureReview.bbl"
-["pdflatex"] 1586552387 "/Users/katelynmorrison/Desktop/Spring ONLINE/School/Colombia/ManizalesResearch/SmartMobilityResearch/LiteratureReview.tex" "/Users/katelynmorrison/Desktop/Spring ONLINE/School/Colombia/ManizalesResearch/SmartMobilityResearch/LiteratureReview.pdf" "LiteratureReview" 1586552390
-  "/Users/katelynmorrison/Desktop/Spring ONLINE/School/Colombia/ManizalesResearch/SmartMobilityResearch/LiteratureReview.aux" 1586552389 653 e3e64b207c4903e9be700ff4925b51e0 ""
-  "/Users/katelynmorrison/Desktop/Spring ONLINE/School/Colombia/ManizalesResearch/SmartMobilityResearch/LiteratureReview.tex" 1586552386 4876 7bf314be83ff1dabeff47ebeeb28e9f8 ""
+["pdflatex"] 1586578775 "/Users/katelynmorrison/Desktop/Spring ONLINE/School/Colombia/ManizalesResearch/SmartMobilityResearch/LiteratureReview.tex" "/Users/katelynmorrison/Desktop/Spring ONLINE/School/Colombia/ManizalesResearch/SmartMobilityResearch/LiteratureReview.pdf" "LiteratureReview" 1586578777
+  "/Users/katelynmorrison/Desktop/Spring ONLINE/School/Colombia/ManizalesResearch/SmartMobilityResearch/LiteratureReview.aux" 1586578777 888 31c46462c485a1f916b7759ff0f829de ""
+  "/Users/katelynmorrison/Desktop/Spring ONLINE/School/Colombia/ManizalesResearch/SmartMobilityResearch/LiteratureReview.tex" 1586578771 6247 92b1939ac24dc9b7d266216607b9f188 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1136768653 1288 655e228510b4c2a1abe905c368440826 ""
@@ -31,12 +31,12 @@
   "/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1557342064 3277517 23507ed665b4dd9046f0f2a94bbef2be ""
   "/usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1557342086 4259635 562fc36ec496993777a6c428d8bfb811 ""
   "/usr/local/texlive/2019/texmf.cnf" 1557341546 577 d150fef99ac436ad1156e86b0892f6ef ""
-  "LiteratureReview.aux" 1586552389 653 e3e64b207c4903e9be700ff4925b51e0 "pdflatex"
-  "LiteratureReview.bbl" 1586552102 677 18fe7f6badcef98de9b29588c5643e47 "bibtex LiteratureReview"
-  "LiteratureReview.tex" 1586552386 4876 7bf314be83ff1dabeff47ebeeb28e9f8 ""
+  "LiteratureReview.aux" 1586578777 888 31c46462c485a1f916b7759ff0f829de "pdflatex"
+  "LiteratureReview.bbl" 1586578775 1144 cde9a73594f9c29618970fde56627f5b "bibtex LiteratureReview"
+  "LiteratureReview.tex" 1586578771 6247 92b1939ac24dc9b7d266216607b9f188 ""
   (generated)
-  "LiteratureReview.aux"
-  "LiteratureReview.log"
-  "/Users/katelynmorrison/Desktop/Spring ONLINE/School/Colombia/ManizalesResearch/SmartMobilityResearch/LiteratureReview.log"
-  "LiteratureReview.pdf"
   "/Users/katelynmorrison/Desktop/Spring ONLINE/School/Colombia/ManizalesResearch/SmartMobilityResearch/LiteratureReview.pdf"
+  "LiteratureReview.pdf"
+  "/Users/katelynmorrison/Desktop/Spring ONLINE/School/Colombia/ManizalesResearch/SmartMobilityResearch/LiteratureReview.log"
+  "LiteratureReview.log"
+  "LiteratureReview.aux"

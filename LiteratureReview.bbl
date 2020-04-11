@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{DeliotteReport}
 Deliotte smart mobility report.
@@ -13,16 +13,29 @@ Ian Docherty, Greg Marsden, and Jillian Anable.
 \newblock The governance of smart mobility.
 \newblock {\em Elsevier: Smart urban mobility}, 115:114--125, 09 2017.
 
+\bibitem{GeeksForGeeks}
+Sociotechnical systems definitions.
+
+\bibitem{ReviewonBike-sharing}
+Ezgi Eren and Volkan Uz.
+\newblock A review on bike-sharing: The factors affecting bike-sharing demand.
+\newblock {\em Sustainable Cities and Society}, page 101882, 10 2019.
+
+\bibitem{HealthyRidePGHPSG}
+Christopher Huffaker.
+\newblock Pittsburgh's healthy ride not so healthy, but changes are on the way.
+\newblock {\em Pittsburgh Post-Gazette}, 07 2017.
+
 \bibitem{CalidaddeVida}
 Informe de calidad de vida manizales 2019.
 
 \bibitem{OficinaDeLaBici}
-Oficina de la bici.
+Oficina de la bici - about.
 
 \bibitem{CityBioBike}
 Citybiobike.
 
 \bibitem{OficinaDeLaBiciHome}
-Oficinadelabici.
+Oficina de la bici - home.
 
 \end{thebibliography}
