@@ -1,39 +1,51 @@
 \documentclass[12pt]{article}
-\usepackage[margin=0.75in]{geometry}
-%\usepackage{typearea}
-%\usepackage{microtype} 
-%\areaset{18cm}{26cm}
+\usepackage[letterpaper]{geometry}
+\usepackage{times}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\geometry{top=1.0in, bottom=1.0in, left=1.0in, right=1.0in}
+\usepackage{fancyhdr}
+\usepackage{csquotes}
+\usepackage{hyperref}
 
-\title{Adults' Perspectives on the Current Bike Sharing System in Manizales, Colombia
-}
-\author{
-    Katelyn C. Morrison,
-    CLAS Seminar \& Field Trip
-}
-\date{}
+%To make sure we actually have header 0.5in away from top edge
+%12pt is one-sixth of an inch. Subtract this from 0.5in to get headsep value
+\setlength\headsep{0.333in}
+\usepackage{setspace}
+\usepackage[style=apa]{biblatex}
+\addbibresource{references.bib}
+\usepackage{indentfirst}
 
+\doublespacing
 \begin{document}
-\maketitle
+\begin{flushleft}
 
-\begin{abstract}
-    \textit{Let's come up with a cool abstract to write here eventually.}
-\end{abstract}
+Katelyn Morrison\\
+Dolores Lima\\
+CLAS Latin America Seminar \& Field Trip\\
+April 20th, 2020\\
+\end{flushleft}
 
-\section*{Introduction}
+\begin{center}
+\subsubsection*{Adults' Perspectives on the Current Bike Sharing System in Manizales, Colombia}
+\end{center}
 
-\subsection*{Statement of Purpose}
+\subsubsection*{Introduction}
+Cities are getting bigger and computers are getting faster, yet the horizon is full of air pollution. But, economies are booming and the collaboration between citizens is resulting in life-changing technology that fosters on-demand, instant gratification characteristics. Such technology can prolong life or destroy boredom, but it can also be used to mitigate the impact of climate change and augment outdated infrastructure and systems. 
+\medskip
+\subsubsection*{Statement of Purpose}
 The objective behind this study is to better understand how adults in Manizales, Colombia view the current bike sharing system, CityBioBike.
 This study attempts to determine which certain factors such as safety, efficiency, and reliability,
 the people of Manizales consider when assessing the quality of the current bike sharing system. Additionally, this study seeks to identify how individuals predict
 possible improvements relating to infrastructure, technology, and safety to the current bike sharing system might 
 impact their use and view of this bike sharing system in the future.
-\subsection*{Research Question}
+\subsubsection*{Research Question}
 Which certain factors such as safety, efficiency, and reliability influence how 
 adults view and assess the current bike sharing system, CityBioBike, in Manizales, Colombia? 
 How do they perceive potential improvements relating to infrastructure, technology, and safety
 to the current bike sharing system impacting their use and view of CityBioBike in the future?
 
-\subsection*{Subproblems}
+\subsubsection*{Sub-problems}
 \begin{enumerate}
     \item How do current users view the safety, efficiency, and reliability of the current bike sharing infrastructure and initiatives?
     \item To what extent does the safety of the current bike sharing infrastructure and initiatives negatively influence how an
@@ -42,9 +54,58 @@ to the current bike sharing system impacting their use and view of CityBioBike i
     individual views and assess it?
     \item To what extent does the reliability of the current bike sharing infrastructure negatively influence how an
     individual views and assess it?
-    \item What factors are most valued when an individual evalutes the potential benefit of future improvements to the bike sharing system?
+    \item What factors are most valued when an individual evaluates the potential benefit of future improvements to the bike sharing system?
 \end{enumerate}
+\medskip
+\subsubsection*{Literature Review}
+Urban planners are constantly deriving and evaluating new strategies to satisfy desires for futuristic and sustainable 
+transportation systems. Some of the most successful transportation initiatives are emerging from wealthy and developed 
+European cities such as Amsterdam, Copenhagen, and Stockholm \cite{DeliotteReport}. Culture and infrastructure around transportation 
+within these European cities set the status quo for biking to be a reliable mode of transportation \cite{DeliotteReport}.  A common characteristic 
+that distinguishes cities with sustainable transportation systems is their initiatives to grow as a smart city that 
+fosters sustainable development. A smart city is composed of several components, attributes, and themes; this research study 
+specifically focuses on the transportation component of a smart city, also known as smart transportation \cite{DefiningSmartCity}. 
+Smart transportation, or smart mobility, in the context of this research study will be defined as transportation that is offered on demand
+and is presented as efficient, sustainable, flexible, and eco-friendly \cite{SmartTransportation}. 
 
+The transition from a traditional transportation system in a city that priortizes cars to a multifaceted, technology-enhanced transportation system
+can be understood through the notion of socio-technical systems \cite{SmartTransportation}. Socio-technical systems are systems comprised of hardware, software,
+data, laws, and citizens \cite{GeeksForGeeks}. 
+\textit{Will continue to add pieces here}
+\subsubsection*{Barriers and Their Imapcts on Demand}
+Improving transportation systems’ design and infrastructure can lead to be an 
+overwhelming task accompanied with an exorbitant cost but in the long run the benefits will distinctly present themselves. 
+Smart transportation initiatives specifically relating to biking and bike sharing systems are growing rapidly within
+cities. Some cities, as Deliotte points out, are lacking in infrastructure to foster a well-established commuter population comprised of 
+bikers \cite{DeliotteReport}. Deliotte acknowledges from a study they did on smart mobility across cities in the United States that, “Slightly 
+more than a quarter of current commuters could switch to biking as one of their main modes of commuting if barriers 
+to biking were substantially reduced” \cite{DeliotteReport}. These barriers mentioned signifcantly affect the use and demand of a bike sharing system in any given city and 
+there are several variables that contribute to this \cite{ReviewonBike-sharing}. Certain variables such as slope and elevation related to topograpy and the city's built environment
+highlight unique trends amongst the individuals that use the bike sharing system. For example, open data from the Western Pennsylvania Regional Data Center
+highlights that users of the bike sharing system in Pittsburgh, PA, USA tend to rent bikes from stations at higher elevations and end at lower elevations \cite{HealthyRidePGHPSG}. Evidently,
+every city's landscape and built environment is unique, but the design and implementation of the bike sharing system seems to remain homogenous. This specific research seeks to identify the views
+of the bike sharing system in Manizales, Colombia. By understanding how citizens assess and view the 
+safety and quality of their city's bike sharing system, urban planners will be able to better design a system that is a safe, efficient, and reliable.
 
-
+\subsubsection*{Manizales, Colombia \& Its Current Transportation Landscape}
+Manizales, Colombia is the capital of the department Caldas in Colombia with a population of 400,436 people in 2018 with
+71\% of the population being between 15 and 64 years old \cite{CalidaddeVida}. The city of Manizales is topographically very mountainous
+naturally presenting barriers that need to be considered when planning for a successful smart mobility presence. To provide a strong case
+to implement smart mobility in Manizales, Colombia, it is necessary to understand these barriers and the current transportation cutlure. In 2018, it was 
+recorded that there was 445 vehicles per 1000 people which is equivalent of saying that there was one vehicle per every two people \cite{CalidaddeVida}.
+Despite the report of 445 vehicles per 1000 people, another model shows that 56\% of the population's main mode of transportation is by bus \cite{CalidaddeVida}. 
+This model however points out the only 12\% of the population reported their main mode of transportation to be walking or biking. To summarize here, the primary modes
+of transporation offered in Manizales, Colombia include public buses, personal vehicles, bicycles, walking, taxis, or the Cable Aereo which is similar to a sky lift \cite{CalidaddeVida}.  
+\textit{Will continue to add pieces here} 
+\subsubsection*{Sustainability \& Mobility}
+Ever since the United Nations released the seventeen sustainable development goals (SDGs) for the world, countries have been consistently integrating
+these goals into initiatives and projects within their cities. Manizales has been working on 
+smart mobility initiatives for a few years now, but only recently have they been making significant progress. Their projects and initiatives for smart mobility 
+are targeted towards advancing eleven of the seventeen SDGs \cite{OficinaDeLaBici}. The bike sharing system in Manizales, Colombia is particularly interesting 
+because a company called CityBioBike has developed a biometric loaning system for bike renting \cite{CityBioBike}. CityBioBike partners with the Bike Office at 
+the Universidad Católica de Manizales to provide a bike sharing system to the city \cite{OficinaDeLaBiciHome}.  
+\textit{Will continue to add pieces here} 
+\subsubsection*{Future Improvments to bike sharing systems in general}
+\textit{Will continue to add pieces here} 
+\printbibliography
 \end{document}
