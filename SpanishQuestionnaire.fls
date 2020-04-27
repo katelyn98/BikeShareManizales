@@ -117,10 +117,12 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/wasysym/uwasy.fd
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/wasy/wasy10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/wasy/wasy8.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/wasy/wasy6.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbxti10.tfm
 OUTPUT /Users/katelynmorrison/Desktop/Spring ONLINE/School/Colombia/ManizalesResearch/SmartMobilityResearch/SpanishQuestionnaire.pdf
 INPUT /usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT /Users/katelynmorrison/Desktop/Spring ONLINE/School/Colombia/ManizalesResearch/SmartMobilityResearch/SpanishQuestionnaire.aux
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/wasy2-ps/wasy10.pfb

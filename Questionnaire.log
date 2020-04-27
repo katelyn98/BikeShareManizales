@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  12 APR 2020 12:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  22 APR 2020 22:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -416,17 +416,17 @@ Overfull \hbox (24.11362pt too wide) in paragraph at lines 142--142
  []
 
 
-Overfull \hbox (2.293pt too wide) in paragraph at lines 179--180
+Overfull \hbox (2.293pt too wide) in paragraph at lines 177--178
 []$\U/wasy/m/n/10.95 2$ \OT1/cmr/m/n/10.95 To vi-sit fri-ends and fa-mi-ly  $\U/wasy/m/n/10.95 2$ \OT1/cmr/m/n/10.95 To en-joy the na-ture and moun-tains  $\U/wasy/m/n/10.95 2$ \OT1/cmr/m/n/10.95 Other: [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--189
-
+Overfull \hbox (0.18333pt too wide) in paragraph at lines 186--187
+[][][][][][]  
  []
 
 
-Overfull \hbox (0.18333pt too wide) in paragraph at lines 186--189
+Overfull \hbox (0.18333pt too wide) in paragraph at lines 188--189
 [][][][][][]  
  []
 
@@ -466,40 +466,40 @@ Overfull \hbox (0.18333pt too wide) in paragraph at lines 202--203
  []
 
 
-Overfull \hbox (0.18333pt too wide) in paragraph at lines 204--205
-[][][][][][]  
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 206--207
+Underfull \hbox (badness 10000) in paragraph at lines 204--205
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 206--207
+Underfull \hbox (badness 10000) in paragraph at lines 204--205
 
  []
 
 [1
 
 {/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 211--212
+Underfull \hbox (badness 10000) in paragraph at lines 209--210
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 222--222
+Underfull \hbox (badness 10000) in paragraph at lines 220--220
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 239--239
+Underfull \hbox (badness 10000) in paragraph at lines 237--237
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 243--244
+Underfull \hbox (badness 10000) in paragraph at lines 241--242
 
+ []
+
+
+Overfull \hbox (0.18333pt too wide) in paragraph at lines 243--244
+[][][][][][]  
  []
 
 
@@ -533,29 +533,24 @@ Overfull \hbox (0.18333pt too wide) in paragraph at lines 255--256
  []
 
 
-Overfull \hbox (0.18333pt too wide) in paragraph at lines 257--258
-[][][][][][]  
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 262--263
+Underfull \hbox (badness 10000) in paragraph at lines 259--260
 
  []
 
 [2] (/Users/katelynmorrison/Desktop/Spring ONLINE/School/Colombia/ManizalesResearch/SmartMobilityResearch/Questionnaire.aux) ) 
 Here is how much of TeX's memory you used:
- 6692 strings out of 492616
- 106123 string characters out of 6129482
+ 6694 strings out of 492616
+ 106150 string characters out of 6129482
  334414 words of memory out of 5000000
- 10523 multiletter control sequences out of 15000+600000
- 8567 words of font info for 31 fonts, out of 8000000 for 9000
+ 10524 multiletter control sequences out of 15000+600000
+ 8926 words of font info for 32 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,7n,56p,9222b,275s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/wasy2-ps/wasy10.pfb>
-Output written on "/Users/katelynmorrison/Desktop/Spring ONLINE/School/Colombia/ManizalesResearch/SmartMobilityResearch/Questionnaire.pdf" (2 pages, 72307 bytes).
+</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/wasy2-ps/wasy10.pfb>
+Output written on "/Users/katelynmorrison/Desktop/Spring ONLINE/School/Colombia/ManizalesResearch/SmartMobilityResearch/Questionnaire.pdf" (2 pages, 82007 bytes).
 PDF statistics:
- 31 PDF objects out of 1000 (max. 8388607)
- 21 compressed objects within 1 object stream
+ 35 PDF objects out of 1000 (max. 8388607)
+ 24 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

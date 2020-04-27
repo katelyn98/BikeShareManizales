@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  12 APR 2020 14:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  22 APR 2020 20:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -402,21 +402,26 @@ LaTeX Font Info:    ... okay on input line 118.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 137.
+(Font)              <10.95> on input line 136.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 137.
+(Font)              <8> on input line 136.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 137.
-LaTeX Font Info:    Try loading font information for U+wasy on input line 137.
+(Font)              <6> on input line 136.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 136.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 )
-Underfull \hbox (badness 10000) in paragraph at lines 186--189
-
+Overfull \hbox (0.18333pt too wide) in paragraph at lines 183--185
+[][][][][][]  
  []
 
 
-Overfull \hbox (0.18333pt too wide) in paragraph at lines 186--189
+Overfull \hbox (0.18333pt too wide) in paragraph at lines 186--187
+[][][][][][]  
+ []
+
+
+Overfull \hbox (0.18333pt too wide) in paragraph at lines 188--189
 [][][][][][]  
  []
 
@@ -446,55 +451,60 @@ Overfull \hbox (0.18333pt too wide) in paragraph at lines 198--199
  []
 
 
-Overfull \hbox (0.18333pt too wide) in paragraph at lines 200--201
+Overfull \hbox (0.18333pt too wide) in paragraph at lines 200--204
 [][][][][][]  
  []
 
 
-Overfull \hbox (0.18333pt too wide) in paragraph at lines 202--203
-[][][][][][]  
- []
-
-
-Overfull \hbox (0.18333pt too wide) in paragraph at lines 204--208
-[][][][][][]  
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 204--208
+Underfull \hbox (badness 10000) in paragraph at lines 200--204
 
  []
 
 [1
 
 {/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 210--211
+Underfull \hbox (badness 10000) in paragraph at lines 206--207
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 221--221
+Underfull \hbox (badness 10000) in paragraph at lines 217--217
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 238--238
+Underfull \hbox (badness 10000) in paragraph at lines 234--234
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 242--243
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
 
  []
 
 
-Overfull \hbox (7.4538pt too wide) in paragraph at lines 244--244
+Overfull \hbox (7.4538pt too wide) in paragraph at lines 240--240
 []\OT1/cmr/bx/n/10.95 Phone App pa-ra dis-po-ni-bi-li-dad de bi-cis     [] 
+ []
+
+
+Overfull \hbox (0.18333pt too wide) in paragraph at lines 240--241
+[][][][][][]  
+ []
+
+
+Overfull \hbox (0.18333pt too wide) in paragraph at lines 242--243
+[][][][][][]  
  []
 
 
 Overfull \hbox (0.18333pt too wide) in paragraph at lines 244--245
 [][][][][][]  
+ []
+
+
+Overfull \hbox (13.77588pt too wide) in paragraph at lines 246--246
+[]\OT1/cmr/bx/n/10.95 M^^Sas esta-cio-nes cer-ca de la pa-ra-da de b^^Sus     [] 
  []
 
 
@@ -508,44 +518,29 @@ Overfull \hbox (0.18333pt too wide) in paragraph at lines 248--249
  []
 
 
-Overfull \hbox (13.77588pt too wide) in paragraph at lines 250--250
-[]\OT1/cmr/bx/n/10.95 M^^Sas esta-cio-nes cer-ca de la pa-ra-da de b^^Sus     [] 
- []
-
-
-Overfull \hbox (0.18333pt too wide) in paragraph at lines 250--251
+Overfull \hbox (0.18333pt too wide) in paragraph at lines 250--253
 [][][][][][]  
  []
 
 
-Overfull \hbox (0.18333pt too wide) in paragraph at lines 252--253
-[][][][][][]  
- []
-
-
-Overfull \hbox (0.18333pt too wide) in paragraph at lines 254--257
-[][][][][][]  
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 258--259
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
 
  []
 
 [2] (/Users/katelynmorrison/Desktop/Spring ONLINE/School/Colombia/ManizalesResearch/SmartMobilityResearch/SpanishQuestionnaire.aux) ) 
 Here is how much of TeX's memory you used:
- 6695 strings out of 492616
- 106203 string characters out of 6129482
- 334414 words of memory out of 5000000
- 10527 multiletter control sequences out of 15000+600000
- 8221 words of font info for 30 fonts, out of 8000000 for 9000
+ 6697 strings out of 492616
+ 106230 string characters out of 6129482
+ 335414 words of memory out of 5000000
+ 10528 multiletter control sequences out of 15000+600000
+ 8580 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,7n,56p,9229b,275s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/wasy2-ps/wasy10.pfb>
-Output written on "/Users/katelynmorrison/Desktop/Spring ONLINE/School/Colombia/ManizalesResearch/SmartMobilityResearch/SpanishQuestionnaire.pdf" (2 pages, 57228 bytes).
+</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/wasy2-ps/wasy10.pfb>
+Output written on "/Users/katelynmorrison/Desktop/Spring ONLINE/School/Colombia/ManizalesResearch/SmartMobilityResearch/SpanishQuestionnaire.pdf" (2 pages, 67362 bytes).
 PDF statistics:
- 27 PDF objects out of 1000 (max. 8388607)
- 18 compressed objects within 1 object stream
+ 31 PDF objects out of 1000 (max. 8388607)
+ 21 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
