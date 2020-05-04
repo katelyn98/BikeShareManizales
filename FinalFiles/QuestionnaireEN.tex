@@ -1,25 +1,264 @@
-\begin{titlepage}
-    \begin{center}
-        \vspace*{1cm}
-        
-        \LARGE
-        \textbf{Adults' Perspectives on the Current Bike Sharing System in Manizales, Colombia: \textit{Manizales En Bici}}
-        
-        \vspace{0.5cm}
-        \Large
-        CLAS Latin American Seminar \& Field Trip
-        
-        \vspace{1.5cm}
-        
-        \textbf{Katelyn C. Morrison}
-        
-        \vspace{5cm}
-        
-        \large
-        Center for Latin American Studies\\
-        Professor: Dolores Lima\\
-        University of Pittsburgh\\
-        22 April 2020
-        
-    \end{center}
-\end{titlepage}
+\documentclass[a4paper,11pt,BCOR10mm,oneside,headsepline]{scrartcl}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{wasysym}% provides \ocircle and \Box
+\usepackage{enumitem}% easy control of topsep and leftmargin for lists
+\usepackage{color}% used for background color
+\usepackage{forloop}% used for \Qrating and \Qlines
+\usepackage{ifthen}% used for \Qitem and \QItem
+\usepackage{typearea}
+\usepackage{tabularcalc}
+\usepackage{geometry}
+\usepackage[table]{xcolor}
+\areaset{17cm}{26cm}
+\usepackage{scrpage2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Beginning of questionnaire command definitions %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% 2010, 2012 by Sven Hartenstein
+%% mail@svenhartenstein.de
+%% http://www.svenhartenstein.de
+%%
+%% Please be warned that this is NOT a full-featured framework for
+%% creating (all sorts of) questionnaires. Rather, it is a small
+%% collection of LaTeX commands that I found useful when creating a
+%% questionnaire. Feel free to copy and adjust any parts you like.
+%% Most probably, you will want to change the commands, so that they
+%% fit your taste.
+%%
+%% Also note that I am not a LaTeX expert! Things can very likely be
+%% done much more elegant than I was able to. If you have suggestions
+%% about what can be improved please send me an email. I intend to
+%% add good tipps to my website and to name contributers of course.
+%%
+%% 10/2012: Thanks to karathan for the suggestion to put \noindent
+%% before \rule!
+
+%% \Qq = Questionaire question. Oh, this is just too simple. It helps
+%% making it easy to globally change the appearance of questions.
+\newcommand{\Qq}[1]{\textbf{#1}}
+
+%% \QO = Circle or box to be ticked. Used both by direct call and by
+%% \Qrating and \Qlist.
+\newcommand{\QO}{$\Box$}% or: $\ocircle$
+
+%% \Qrating = Automatically create a rating scale with NUM steps, like
+%% this: 0--0--0--0--0.
+\newcounter{qr}
+\newcommand{\Qrating}[1]{\QO\forloop{qr}{1}{\value{qr} < #1}{---\QO}}
+
+%% \Qline = Again, this is very simple. It helps setting the line
+%% thickness globally. Used both by direct call and by \Qlines.
+\newcommand{\Qline}[1]{\noindent\rule{#1}{0.6pt}}
+
+%% \Qlines = Insert NUM lines with width=\linewith. You can change the
+%% \vskip value to adjust the spacing.
+\newcounter{ql}
+\newcommand{\Qlines}[1]{\forloop{ql}{0}{\value{ql}<#1}{\vskip0em\Qline{\linewidth}}}
+
+%% \Qlist = This is an environment very similar to itemize but with
+%% \QO in front of each list item. Useful for classical multiple
+%% choice. Change leftmargin and topsep accourding to your taste.
+\newenvironment{Qlist}{%
+\renewcommand{\labelitemi}{\QO}
+\begin{itemize}[leftmargin=1.5em,topsep=-.5em]
+}{%
+\end{itemize}
+}
+
+%% \Qtab = A "tabulator simulation". The first argument is the
+%% distance from the left margin. The second argument is content which
+%% is indented within the current row.
+\newlength{\qt}
+\newcommand{\Qtab}[2]{
+\setlength{\qt}{\linewidth}
+\addtolength{\qt}{-#1}
+\hfill\parbox[t]{\qt}{\raggedright #2}
+}
+
+%% \Qitem = Item with automatic numbering. The first optional argument
+%% can be used to create sub-items like 2a, 2b, 2c, ... The item
+%% number is increased if the first argument is omitted or equals 'a'.
+%% You will have to adjust this if you prefer a different numbering
+%% scheme. Adjust topsep and leftmargin as needed.
+\newcounter{itemnummer}
+\newcommand{\Qitem}[2][]{% #1 optional, #2 notwendig
+\ifthenelse{\equal{#1}{}}{\stepcounter{itemnummer}}{}
+\ifthenelse{\equal{#1}{a}}{\stepcounter{itemnummer}}{}
+\begin{enumerate}[topsep=2pt,leftmargin=2.8em]
+\item[\textbf{\arabic{itemnummer}#1.}] #2
+\end{enumerate}
+}
+
+%% \QItem = Like \Qitem but with alternating background color. This
+%% might be error prone as I hard-coded some lengths (-5.25pt and
+%% -3pt)! I do not yet understand why I need them.
+\definecolor{bgodd}{rgb}{0.8,0.8,0.8}
+\definecolor{bgeven}{rgb}{0.9,0.9,0.9}
+\newcounter{itemoddeven}
+\newlength{\gb}
+\newcommand{\QItem}[2][]{% #1 optional, #2 notwendig
+\setlength{\gb}{\linewidth}
+\addtolength{\gb}{-5.25pt}
+\ifthenelse{\equal{\value{itemoddeven}}{0}}{%
+\noindent\colorbox{bgeven}{\hskip-3pt\begin{minipage}{\gb}\Qitem[#1]{#2}\end{minipage}}%
+\stepcounter{itemoddeven}%
+}{%
+\noindent\colorbox{bgodd}{\hskip-3pt\begin{minipage}{\gb}\Qitem[#1]{#2}\end{minipage}}%
+\setcounter{itemoddeven}{0}%
+}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% End of questionnaire command definitions %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\renewcommand{\QO}{$\ocircle$}% Use circles now instead of boxes.
+%%\begin{center}
+%%\textbf{\huge Questionnaire \LaTeX}
+%%\end{center}\vskip1em
+
+\noindent Thank you for participating in this study; your honesty and responses are appreciated.
+Your responses to the questions below will remain annonymous and confidential.
+You do not have to answer any question that you do not want to. This study is not
+associated with any public or private organizations. Analysis of data will be for
+academic use only at the University of Pittsburgh (EE. UU.). 
+
+%\noindent \textit{Please note that no tabular environment is used in
+%this example questionnaire. Of course, you could use tabular to
+%create more complex layout.}
+
+\subsection*{About you}
+
+\Qitem{ \Qq{Please select your age range: }\hskip0.4cm \QO{}
+18-28 \hskip0.4cm \QO{} 29-40 \hskip0.4cm \QO{} 41-50 \hskip0.4cm \QO{} 51-60 \hskip0.4cm \QO{} 61+}
+
+\vspace{0.1cm}
+
+\Qitem{ \Qq{Please select the gender that you identify with: }\hskip0.4cm \QO{}
+Female \hskip0.4cm \QO{} Male \hskip0.4cm Other: \Qline{2.5cm} }
+\vspace{0.1cm}
+
+\Qitem{\Qq{When it comes transportation, which is the most important factor to you?}
+ \begin{Qlist} 
+    \item[]\QO{} Safety \hskip0.5cm \QO{} Travel time \hskip0.5cm \QO{} Cost \hskip0.5cm \QO{} Comfortability \hskip0.5cm \QO{} On-demand \hskip0.5cm 
+ \end{Qlist}
+}
+
+\subsection*{Current Bicycle Initiatives in Manizales, Colombia}
+
+\Qitem{ \Qq{Did you know there was a bike sharing system called \textit{Manizales En Bici} in Manizales, Colombia?}\\
+\QO{} yes \hskip2cm \QO{} no \hskip2cm \QO{} not sure}{}
+
+\vspace{0.1cm}
+
+\Qitem{\Qq{Do you live within a 10 minute walk from a \textit{Manizales En Bici} bike sharing station?}\\
+\QO{} yes \hskip2cm \QO{} no \hskip2cm \QO{} not sure}{}
+
+\vspace{0.1cm}
+
+\Qitem{ \Qq{Have you ever used the \textit{Manizales En Bici} bike sharing system before? (If no, go to question 13.)}\\
+\hskip0.5cm\QO{} yes \hskip1cm \QO{} no}{}
+\vspace{0.1cm}
+\Qitem{\Qq{Are you a frequent user? (If no, go to question 12.)}
+\hskip1cm\QO{} yes \hskip1cm \QO{} no}{}
+\vspace{0.1cm}
+\renewcommand{\QO}{$\ocircle$}
+\Qitem{ \Qq{How many times do you use the \textit{Manizales En Bici} bike sharing system on avg in a week?: }\\\hskip2cm \QO{}
+0-4 \hskip2cm \QO{} 5-8 \hskip2cm \QO{} 9-12 \hskip2cm \QO{} 13+}
+\renewcommand{\QO}{$\Box$}
+\Qitem{\Qq{What are your main reasons you use it? Select all that apply.} 
+}
+\begin{Qlist}
+    \item[]\QO{} To grocery shop \hskip0.5cm \QO{} To go to work \hskip0.5cm \QO{} To exercise \hskip0.5cm \QO{} To save money \hskip0.5cm \QO{} To go to school
+    \item[]\QO{} To visit friends and family \hskip0.5cm \QO{} To enjoy the nature and mountains \hskip0.5cm \QO{} Other: \Qline{3cm}
+    \end{Qlist}
+\vspace{0.3cm}
+\renewcommand{\QO}{$\ocircle$}
+
+\vspace{0.1cm}
+
+\textbf{10. Please rate how the \textit{Manizales En Bici} bike sharing system in Manizales is doing with respect to each category listed below.}
+
+\QItem[a]{ \Qq{Cleanliness} \hskip5.7cm {not clean\Qrating{5} very clean}}
+
+\QItem[b]{ \Qq{Quality} \hskip5.9cm {breaks a lot \Qrating{5} rarely breaks}}
+
+\QItem[c]{ \Qq{Safety}\hskip6.9cm {not safe \Qrating{5} very safe}}
+
+\QItem[d]{ \Qq{Registration Process} \hskip2.7cm {too complicated \Qrating{5} very easy}}
+
+\QItem[e]{ \Qq{Renting Process}\hskip3.6cm {too complicated \Qrating{5} very easy}}
+
+\QItem[f]{ \Qq{Bike availability}\hskip3.8cm {never available \Qrating{5} always available}}
+
+\QItem[g]{ \Qq{Bike Station Locations}\hskip1.5cm {needs more locations \Qrating{5} perfect as is}}
+
+\QItem[h]{ \Qq{Bike parking}\hskip3.4cm {needs more locations \Qrating{5} perfect as is}}
+
+\QItem[i]{ \Qq{Bike only lanes}\hskip3.0cm {needs more locations \Qrating{5} perfect as is}}
+
+\QItem[j]{ \Qq{Bike safety education \& laws} \hskip2.0cm {need more \Qrating{5} perfect as is}}\\ \\ 
+
+\vspace{0.1cm}
+\Qitem{\Qq{Please provide any suggestions about how the \textit{Manizales En Bici} can improve in any of the areas listed above. }} \Qline{17cm}\\ \Qline{17cm}\\ \Qline{17cm}
+
+\textbf{Proceed to question 15.}\\
+
+\vspace{0.1cm}
+\renewcommand{\QO}{$\Box$}
+\Qitem{\Qq{Please identify below which factors play a role in why you are not a frequent user of the \textit{Manizales En Bici} bike sharing system in Manizales, Colombia.}
+    \begin{Qlist}
+    \item[]\QO{} Safety on roads \hskip1.5cm \QO{} Quality of bikes \hskip1.8cm \QO{} No bike stations near me 
+    \item[]\QO{} Travel time is too long \hskip0.3cm \QO{} I don't think it's reliable \hskip0.3cm \QO{} Too many hills on my route 
+    \item[]\QO{} I prefer the bus \hskip1.5cm \QO{} My destination is within walking distance
+    \item[]\QO{} Other: \Qline{2cm}\\
+    \end{Qlist}
+}
+
+\subsection*{Potential Bicycle Initiatives in Manizales, Colombia}
+\vspace{0.1cm}
+
+\renewcommand{\QO}{$\ocircle$}
+\Qitem{\Qq{Did you know that the \textit{Manizales En Bici} bike sharing system is free to use?}\hskip1cm\QO{} yes \hskip1cm \QO{} no}{}
+\vspace{0.1cm}
+\renewcommand{\QO}{$\Box$}
+\Qitem{\Qq{What are the main reasons that you do not use the \textit{Manizales En Bici} bike sharing system? Select all that apply.}
+\begin{Qlist}
+    \item[]\QO{} Safety on roads \hskip1.5cm \QO{} Quality of bikes \hskip1.8cm \QO{} No bike stations near me 
+    \item[]\QO{} Travel time is too long \hskip0.3cm \QO{} I don't think it's reliable \hskip0.3cm \QO{} Too many hills on my route 
+    \item[]\QO{} I prefer the bus \hskip1.5cm \QO{} My destination is within walking distance
+    \item[]\QO{} Other: \Qline{2cm}\\
+    \end{Qlist}
+
+}
+\vspace{0.1cm}
+
+\renewcommand{\QO}{$\ocircle$}
+\textbf{15. How likely are you to start using or continue using the \textit{Manizales En Bici} bike sharing system if the following were offered?} \\
+
+\QItem[a]{ \Qq{Bike availability phone app} \Qtab{7.5cm}{very unlikely \Qrating{5} very likely}}
+
+\QItem[c]{ \Qq{Protected bike-only lane} \Qtab{7.5cm}{very unlikely \Qrating{5} very likely}}
+
+\QItem[e]{ \Qq{More bike rental stations} \Qtab{7.5cm}{very unlikely \Qrating{5} very likely}}
+
+\QItem[e]{ \Qq{Bike rental stations near bus stops} \Qtab{7.5cm}{very unlikely \Qrating{5} very likely}}
+
+\QItem[e]{ \Qq{More bikes} \Qtab{7.5cm}{very unlikely \Qrating{5} very likely}}
+
+\QItem[d]{ \Qq{More Electric-assisted bikes near me} \Qtab{7.5cm}{very unlikely \Qrating{5} very likely}}
+
+\QItem[e]{ \Qq{Stationless bike sharing system} \Qtab{7.5cm}{very unlikely \Qrating{5} very likely}}
+
+\vspace{0.1cm}
+
+\Qitem{\Qq{Do you have suggestions to help improve the \textit{Manizales En Bici} bike sharing system in Manizales, Colombia?}} \Qline{17cm}\\ \Qline{17cm}\\ \Qline{17cm}\\
+
+
+\textit{Thank you for taking the time to fill out this survey! Have a wonderful day!}
+
+\end{document}
